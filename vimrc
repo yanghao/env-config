@@ -13,6 +13,8 @@ set nowrap
 set expandtab
 
 autocmd FileType make set noexpandtab
+autocmd FileType c color default
 autocmd FileType c set cindent
 autocmd FileType c set noexpandtab
+autocmd Filetype c source ~/git_dev/config/adrian.vim
 autocmd FileType python set nocindent
