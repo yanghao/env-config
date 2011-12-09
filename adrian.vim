@@ -47,7 +47,7 @@ if exists("syntax_on")
   highlight Constant   term=underline ctermfg=LightRed                   guifg=#ffa0a0
   highlight Identifier term=underline ctermfg=LightCyan                  guifg=#40ffff
   highlight Statement  term=bold      ctermfg=Yellow           gui=bold  guifg=#ffff60
-  highlight PreProc    term=underline ctermfg=Red                        guifg=#ff4500
+  highlight PreProc    term=underline ctermfg=Magenta                        guifg=#ff4500
   highlight Type       term=underline ctermfg=LightBlue        gui=bold  guifg=#7d96ff
   highlight Special    term=bold      ctermfg=Magenta                    guifg=Orange
   highlight Ignore                    ctermfg=black                      guifg=bg
