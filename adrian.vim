@@ -39,7 +39,7 @@ if exists("syntax_on")
   " NonText is below the last line (~ lines).
   highlight Normal         ctermbg=Black      ctermfg=Green         guibg=Black      guifg=Green 
   highlight Cursor                  guibg=Grey70     guifg=White
-  highlight NonText                 guibg=Grey80
+  highlight NonText                 ctermbg=Black       guibg=Black
   highlight StatusLine     gui=bold guibg=DarkGrey   guifg=Orange
   highlight StatusLineNC            guibg=DarkGrey   guifg=Orange
 
