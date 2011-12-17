@@ -9,4 +9,4 @@ alias gvim='gvim -f'
 
 export PS1='\[\e[32m\]\u@\h:\[\e[33m\]\w\[\e[0m\] \$ '
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/toolchain/bin:~/android_source/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin:$PATH
