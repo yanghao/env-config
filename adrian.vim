@@ -37,7 +37,7 @@ if exists("syntax_on")
 
   " Normal is for the normal (unhighlighted) text and background.
   " NonText is below the last line (~ lines).
-  highlight Normal         ctermbg=Black      ctermfg=Green         guibg=Black      guifg=Green 
+  highlight Normal                  ctermbg=Black      ctermfg=Green         guibg=Black      guifg=Green 
   highlight Cursor                  guibg=Grey70     guifg=White
   highlight NonText                 ctermbg=Black       guibg=Black
   highlight StatusLine     gui=bold guibg=DarkGrey   guifg=Orange
@@ -46,10 +46,10 @@ if exists("syntax_on")
   highlight Comment    term=bold      ctermbg=Black ctermfg=LightGrey                  guifg=#d1ddff
   highlight Constant   term=underline ctermfg=LightRed                   guifg=#ffa0a0
   highlight Identifier term=underline ctermfg=LightCyan                  guifg=#40ffff
-  highlight Statement  term=bold      ctermfg=Yellow           gui=bold  guifg=#ffff60
-  highlight PreProc    term=underline ctermfg=Magenta                        guifg=#ff4500
-  highlight Type       term=underline ctermfg=LightBlue        gui=bold  guifg=#7d96ff
-  highlight Special    term=bold      ctermfg=Magenta                    guifg=Orange
+  highlight Statement  term=bold      ctermfg=Magenta           gui=bold guifg=Magenta
+  highlight PreProc    term=underline ctermfg=Magenta guifg=Magenta
+  highlight Type       term=underline ctermfg=Yellow        gui=bold guifg=Yellow
+  highlight Special    term=bold      ctermfg=Magenta guifg=Magenta
   highlight Ignore                    ctermfg=black                      guifg=bg
   highlight Error                     ctermfg=White      ctermbg=Red     guifg=White    guibg=Red
   highlight Todo                      ctermfg=Blue       ctermbg=Yellow  guifg=Blue     guibg=Yellow
@@ -77,7 +77,7 @@ if exists("syntax_on")
   highlight link Function        Identifier
   highlight link Conditional     Type
   highlight link Repeat          Type
-  highlight link Label           Type
+  highlight link Label           Special
   highlight link Operator        Type
   highlight link Keyword         Type
   "highlight link Exception       Type
