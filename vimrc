@@ -11,6 +11,8 @@ set hlsearch
 color evening
 set nowrap
 set expandtab
+set textwidth=80
+let c_syntax_for_h=1
 
 autocmd FileType make set noexpandtab
 autocmd FileType c color default
