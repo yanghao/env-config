@@ -20,3 +20,4 @@ autocmd FileType c set cindent
 autocmd FileType c set noexpandtab
 autocmd Filetype c source ~/git_dev/config/adrian.vim
 autocmd FileType python set nocindent
+autocmd FileType python set textwidth=150
