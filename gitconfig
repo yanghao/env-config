@@ -1,0 +1,11 @@
+[color]
+        ui = auto
+[user]
+        name = Hua Yanghao
+        email = yanghao.hua@intel.com
+
+[core]
+        editor = vim
+
+[http]
+        proxy = proxy-prc.intel.com:911
