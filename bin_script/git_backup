@@ -1,0 +1,8 @@
+SRC='/home/hua/git_dev/'
+DES='/home/hua/cv_os_proj/Hua_Yanghao/git/'
+
+if [ -d "$DES" ] ; then
+sudo rsync -rzuv "$SRC" "$DES" > /home/hua/rsync.log && echo "Done."
+else
+echo "Please check if cv_os_proj is mounted properly."
+fi

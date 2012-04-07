@@ -1,0 +1,1 @@
+sudo smbmount //xiysdn04/CV_OS_Proj /home/hua/cv_os_proj -o user=huyangha uid=hua gid=hua dom=IMC
