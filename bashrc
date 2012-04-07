@@ -9,6 +9,7 @@ alias gvim='gvim -f'
 
 export PS1='\[\e[32m\]\u@\h:\[\e[33m\]\w\[\e[0m\] \$ '
 
-export PATH=~/bin:$PATH
+# No longer needed as in .profile, bin is already added
+# export PATH=~/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
