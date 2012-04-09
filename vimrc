@@ -21,3 +21,6 @@ autocmd FileType c set noexpandtab
 autocmd Filetype c source ~/git_dev/config/adrian.vim
 autocmd FileType python set nocindent
 autocmd FileType python set textwidth=150
+autocmd FileType python set tabstop=4
+autocmd FileType python set shiftwidth=4
+autocmd FileType python set softtabstop=4
