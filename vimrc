@@ -4,7 +4,6 @@ set shiftwidth=8
 set softtabstop=8
 set ruler
 set showcmd
-syntax on
 set autoindent
 set nosmartindent
 set hlsearch
@@ -13,6 +12,7 @@ set nowrap
 set expandtab
 set textwidth=80
 let c_syntax_for_h=1
+syntax on
 
 autocmd FileType make set noexpandtab
 autocmd FileType c color default
@@ -24,3 +24,4 @@ autocmd FileType python set textwidth=150
 autocmd FileType python set tabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set softtabstop=4
+
