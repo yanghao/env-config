@@ -12,6 +12,6 @@ export PS1='\[\e[32m\]\u@\h:\[\e[33m\]\w\[\e[0m\] \$ '
 # No longer needed as in .profile, bin is already added
 # export PATH=~/bin:$PATH
 
-source default
+source ~/bin/default
 
 eval `dircolors $HOME/.dir_colors`
