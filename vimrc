@@ -12,13 +12,13 @@ set nowrap
 set expandtab
 set textwidth=80
 let c_syntax_for_h=1
+let Tlist_Auto_Open=1
 syntax on
 
 autocmd FileType make set noexpandtab
 autocmd FileType c color default
 autocmd FileType c set cindent
 autocmd FileType c set noexpandtab
-autocmd FileType c Tlist
 autocmd Filetype c source ~/.vim/plugin/adrian.vim
 autocmd FileType python set nocindent
 autocmd FileType python set textwidth=150
