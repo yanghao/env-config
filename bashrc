@@ -6,6 +6,8 @@ alias l='ls -CF'
 alias gitk='gitk --all'
 alias rm='rm -i'
 alias gvim='gvim -f'
+alias ..='cd ..'
+alias cd..='cd ..'
 
 export PS1='\[\e[32m\]\u@\h:\[\e[33m\]\w\[\e[0m\] \$ '
 
