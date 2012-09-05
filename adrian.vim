@@ -61,7 +61,7 @@ if exists("syntax_on")
   highlight Visual      cterm=NONE    ctermfg=Black      ctermbg=LightGrey  gui=NONE    guifg=Black guibg=Grey70
 
   highlight Float                     ctermfg=LightBlue                       guifg=#88AAEE
-  highlight Exception                 ctermfg=Red        ctermbg=White   guifg=Red      guibg=White
+  "highlight Exception                 ctermfg=Red        ctermbg=White   guifg=Red      guibg=White
   highlight Typedef                   ctermfg=White      ctermbg=Blue    gui=bold       guifg=White guibg=Blue
   highlight SpecialChar               ctermfg=LightRed      ctermbg=Black   guifg=LightRed    guibg=Black
   highlight Delimiter                 ctermfg=White      ctermbg=Black   guifg=White    guibg=Black
@@ -80,7 +80,7 @@ if exists("syntax_on")
   highlight link Label           Special
   highlight link Operator        Type
   highlight link Keyword         Type
-  "highlight link Exception       Type
+  highlight link Exception       Type
   highlight link Include         PreProc
   highlight link Define          PreProc
   highlight link Macro           PreProc
