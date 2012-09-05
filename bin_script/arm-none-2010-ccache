@@ -1,0 +1,5 @@
+export PATH=~/toolchain/arm-2010q1-linux/bin:$PATH
+export CROSS_COMPILE="ccache arm-none-linux-gnueabi-"
+export ARCH=arm
+export CCACHE_PREFIX="distcc"
+#export CCACHE_CC="arm-none-linux-gnueabi-gcc"

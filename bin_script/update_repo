@@ -1,0 +1,38 @@
+#!/usr/bin/python
+import sys
+import os
+import subprocess
+
+pwd = os.getcwd()
+fd = open(sys.argv[1],'r')
+error_list = []
+all_lines = fd.readlines()
+fd.close()
+for line in all_lines:
+        line = line.strip()
+        if line != '':
+                folder, command = line.split('=')
+                folder = folder.strip()
+                command = command.strip()
+                dest = os.path.join(pwd, folder)
+                print("******* directory %s, command %s *******" % (dest, command))
+                try:
+                    os.chdir(dest)
+                    subprocess.check_call(command.split(), stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
+                except subprocess.CalledProcessError as e:
+                    tmp = [folder, command, e.returncode, '']
+                    error_list.append(tmp)
+                except OSError as ex:
+                    tmp = [folder, command, ex.errno, ex.strerror]
+                    error_list.append(tmp)
+                except:
+                    print("Unexpected error ... ")
+                    raise
+                os.chdir(pwd)
+
+print("\n######### Summary ##########")
+print("Total: %d, fail: %d" % (len(all_lines), len(error_list)))
+print("Failures:")
+for e in error_list:
+    print e
+print("Done.")
