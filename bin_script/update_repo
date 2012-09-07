@@ -32,7 +32,8 @@ for line in all_lines:
 
 print("\n######### Summary ##########")
 print("Total: %d, fail: %d" % (len(all_lines), len(error_list)))
-print("Failures:")
-for e in error_list:
-    print e
+if len(error_list) != 0:
+    print("Failures:")
+    for e in error_list:
+        print e
 print("Done.")
